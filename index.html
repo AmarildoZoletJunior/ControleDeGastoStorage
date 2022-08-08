@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bb1f2add40.js" crossorigin="anonymous"></script>
+    <title>Controle de gastos</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Formulario de cadastro de contas -->
+        <form action="" class="cadastro-corpo">
+            <div class="titulo">
+                <p>Cadastro de contas</p>
+            </div>
+            <div class="cadastro-escrita">
+                <label for="" class="cadastro-input">
+                    <p>Nome</p>
+                    <input type="text" class="nomeInput" placeholder="Nome da conta">
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-exclamation"></i>
+                    <small>Mensagem de erro</small>
+                </label>
+                <label for="" class="cadastro-input">
+                    <p>Valor</p>
+                    <input type="text" class="valorInput" placeholder="Valor da conta">
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-exclamation"></i>
+                    <small>Mensagem de erro</small>
+                </label>
+                <label for="" class="cadastro-input">
+                    <p>Data da conta</p>
+                    <input type="text" class="dataInput" placeholder="Data da conta">
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-exclamation"></i>
+                    <small>Mensagem de erro</small>
+                </label>
+                <button type="submit" class="enviar">Enviar cadastro</button>
+            </div>
+            
+        </form>
+        <!-- Receita contendo gasto/ganhos/total -->
+            <div class="container-corpo">
+                <div class="receita-corpo">
+                    <div class="ganhos-receita base-receita">
+                        <div class="titulo-ganhos base-center">
+                            Ganhos
+                        </div>
+                        <div class="ganhos-corpo center">
+                            0
+                        </div>
+                    </div>
+                    <div class="gastos-receita base-receita">
+                        <div class="titulo-gastos base-center">
+                            Gastos
+                        </div>
+                        <div class="gasto-corpo center">
+                           0
+                        </div>
+                    </div>
+                    <div class="total-receita base-receita">
+                        <div class="titulo-total base-center">
+                            Total
+                        </div>
+                        <div class="total-corpo center">
+                            0
+                        </div>
+                    </div>
+                </div>
+        <!-- Histórico -->
+            <div class="historico-pai">
+                <div class="titulo-historico">
+                    <p>Histórico de transações</p>
+                </div>
+                <div class="historico-corpo">
+                </div>
+            </div>
+        </div>
+        <!-- </section> -->
+        <div class="modal">
+            <div class="modal-content">
+                <i class="fa-solid fa-xmark" id="sair"></i>
+                <form action="">
+                    <label for="" class="modal-form">
+                        <p>Valor</p>
+                        <input class="nome-modal" type="text" placeholder="Novo valor">
+                        <i class="fa-solid fa-check"></i>
+                        <i class="fa-solid fa-exclamation"></i>
+                        <small>Mensagem de erro</small>
+                    </label>
+                    <label for="" class="modal-form">
+                        <p>Data</p>
+                        <input class="data-modal" type="text" placeholder="Nova data">
+                        <i class="fa-solid fa-check"></i>
+                        <i class="fa-solid fa-exclamation"></i>
+                        <small>Mensagem de erro</small>
+                    </label>
+                </form>
+                <button class="submit-modal" type="submit">Salvar</button>
+            </div>
+        </div>
+    </div>
+    <audio src="y2meta.com-Efeito sonoro para transição-(480p).mp4" class="audioadd"></audio>
+    <script src="index.js"></script>
+</body>
+</html>
